@@ -3,7 +3,7 @@
 }
 body {
     /* padding: 10px; */
-    /* width: 960px; */
+    width: 960px;
     font-family: 'Arial';
     text-align: center;
     /* line-height: 32px; */
@@ -15,10 +15,11 @@ body {
     /* background: #4aaaa5; */
 }
 .page-header {
-    display: block;
+    /* display: inline-block; */
     width: 100%;
+    margin-top: 20px;
     font-size: 48px;
-    padding: 20px;
+    padding: 30px;
     /* margin-bottom: 10px; */
     color: white;
     background: green;
@@ -26,7 +27,8 @@ body {
 }
 .menu-header {
     /* display: inline-block; */
-    width: 100%;
+    /* width: 100%;
+    height: 100%; */
     font-size: 32px;
     padding: 20px;
     /* margin-bottom: 10px; */
@@ -50,18 +52,21 @@ body {
     line-height: 1.6;
     letter-spacing: 2px;
 }
-#aboutIcon {
+#first-row {
+    width: 100%;
+}
+#about-icon {
     color: green;
 }
-#projectsIcon {
+#projects-icon {
     color: blue;
 }
-#skillsIcon {  
+#skills-icon {  
     color: purple;
 }
-#contactsIcon {
+#contacts-icon {
     color: brown
 }
-#resumeIcon {
+#resume-icon {
     color: red;
 }
