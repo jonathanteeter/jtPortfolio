@@ -3,32 +3,38 @@
 }
 body {
     /* padding: 10px; */
-    width: 960px;
+    /* width: 960px; */
     font-family: 'Arial';
     text-align: center;
     /* line-height: 32px; */
 }
+/* general */
 .btn {
     width: 140px;
     color: rgba(0, 0, 0, 0.685);
     text-align: left;
     /* background: #4aaaa5; */
 }
-.page-header {
+#page-name {
     /* display: inline-block; */
     width: 100%;
-    margin-top: 20px;
-    font-size: 48px;
-    padding: 30px;
-    /* margin-bottom: 10px; */
+    max-height: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* viewport width text size */
+    font-size:10vw;  
+    /* font-size: 48px; */
+    padding: 20px;
+
     color: white;
     background: green;
     /* position: fixed; */
 }
-.menu-header {
+#my-name {
     /* display: inline-block; */
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    text-align: center;
+    /* height: 100%; */
     font-size: 32px;
     padding: 20px;
     /* margin-bottom: 10px; */
@@ -36,7 +42,7 @@ body {
     background: white;
     /* position ????????????????? */
 }
-.job {
+#job-title {
     /* display: inline-block; */
     width: 100%;
     font-size: 14px;
@@ -45,13 +51,8 @@ body {
     color: rgba(0, 0, 0, 0.685);
     background: white;
 }
-.page-section {
-    margin: 40px 20px 20px 80px;
-    font-size: 24px;
-    text-align: left;
-    line-height: 1.6;
-    letter-spacing: 2px;
-}
+
+/* Navigation */
 #first-row {
     width: 100%;
 }
@@ -70,3 +71,52 @@ body {
 #resume-icon {
     color: red;
 }
+
+/* Each Page */
+.page-section {
+    margin: 20px 10px 10px 20px;
+    /* font-size: 24px; */
+    text-align: left;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+/* Projects Page */
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    /* margin: 20px 0 25px; */
+    overflow: auto;
+}
+/* .work:nth-child(even) {
+    margin: 40px;
+} */
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+    border-width: 20px;
+    border-color: orangered;
+  }
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 100;
+    line-height: 10px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+/* .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+} */
