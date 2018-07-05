@@ -2,36 +2,30 @@
     box-sizing: border-box;
 }
 body {
-    /* padding: 10px; */
-    /* width: 960px; */
     font-family: 'Arial';
-    text-align: center;
-    /* line-height: 32px; */
+    font-size: calc(14px + (26 - 14) * ((80vw - 300px) / (1600 - 300)));
+    min-width: 320px;
+    text-align: left;
 }
 /* general */
 .btn {
-    width: 140px;
+    width: 150px;
     color: rgba(0, 0, 0, 0.685);
-    text-align: left;
-    /* background: #4aaaa5; */
 }
-#page-name {
-    /* display: inline-block; */
-    width: 100%;
-    max-height: 160px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* viewport width text size */
-    font-size:10vw;  
-    /* font-size: 48px; */
-    padding: 20px;
 
-    color: white;
-    background: green;
-    /* position: fixed; */
+.btn-toolbar {
+    text-align: right;
 }
-#my-name {
+
+.btn-group {
+    margin-bottom: 10px;
+    text-align: center;
+    /* width: inherit; */
     /* display: inline-block; */
+} 
+
+#my-name {
+    display: inline-block;
     width: 100%;
     text-align: center;
     /* height: 100%; */
@@ -40,10 +34,9 @@ body {
     /* margin-bottom: 10px; */
     color: green;
     background: white;
-    /* position ????????????????? */
 }
 #job-title {
-    /* display: inline-block; */
+    display: inline-block;
     width: 100%;
     font-size: 14px;
     /* padding: 20px; */
@@ -52,12 +45,10 @@ body {
     background: white;
 }
 
-/* Navigation */
-#first-row {
-    width: 100%;
-}
+/* Navigation icons */
 #about-icon {
     color: green;
+    text-align: left;
 }
 #projects-icon {
     color: blue;
@@ -65,14 +56,50 @@ body {
 #skills-icon {  
     color: purple;
 }
-#contacts-icon {
+#contact-icon {
     color: brown
 }
 #resume-icon {
     color: red;
 }
 
+.navigation {
+    display: inline-block;
+}
+.container {
+    display: inline-block;
+}
+#nav-group {
+    display: inline-block;
+    text-align: center;
+    max-width: 200px;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 /* Each Page */
+#page-name {
+    /* display: inline-block; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 320px;
+    padding: 20px;
+    width: 100%;
+    max-height: 160px;
+    text-align: left;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    /* viewport width text size */
+    font-size:6vw;  
+    font-weight: normal;
+
+    padding: 20px;
+    color: white;
+    background: green;
+    /* font-display: auto; */
+}
 .page-section {
     margin: 20px 10px 10px 20px;
     /* font-size: 24px; */
@@ -80,6 +107,7 @@ body {
     line-height: 1.6;
     letter-spacing: 2px;
 }
+
 /* Projects Page */
 .work {
     position: relative;
@@ -95,13 +123,15 @@ body {
 } */
 .work img {
     width: 100%;
+    height: auto;
     border: 0 none;
     opacity: 0.8;
     border-width: 20px;
     border-color: orangered;
-  }
-  .work h3 {
+}
+.work h3 {
     position: absolute;
+    font-size: 15px;
     bottom: 20px;
     width: 100%;
     padding: 15px;
@@ -113,10 +143,11 @@ body {
     background: #4aaaa5;
     border-bottom: 0;
 }
-/* .auth-image {
-    float: left;
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
-} */
+h3 {
+    color: green;
+    font-weight: 600;
+}
+.connect {
+    height: 100px;
+    margin: 20px;
+}
