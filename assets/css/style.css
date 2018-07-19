@@ -45,22 +45,25 @@ body {
     background: white;
 }
 
-/* Navigation icons */
+/* Navigation */
+.nav-center {
+    align-content: center;
+    text-align: center;
+}
 #about-icon {
     color: green;
-    text-align: left;
 }
 #projects-icon {
     color: blue;
 }
 #skills-icon {  
-    color: purple;
+    color: darkviolet;
 }
 #contact-icon {
-    color: brown
+    color: darkred;
 }
 #resume-icon {
-    color: red;
+    color: darkslateblue;
 }
 
 .navigation {
@@ -69,19 +72,22 @@ body {
 .container {
     display: inline-block;
 }
-#nav-group {
+.nav-logo {
     display: inline-block;
     text-align: center;
     max-width: 200px;
 }
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+.nav-item {
+    max-width: 200px;
+}
+
+.container-fluid {
+    display: inline-block;
 }
 
 /* Each Page */
 #page-name {
-    /* display: inline-block; */
+    display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-width: 320px;
@@ -122,19 +128,20 @@ body {
     margin: 40px;
 } */
 .work img {
+    display: inline-block;
     width: 100%;
     height: auto;
     border: 0 none;
     opacity: 0.8;
     border-width: 20px;
-    border-color: orangered;
+    border-color: black;
 }
 .work h3 {
     position: absolute;
     font-size: 15px;
-    bottom: 20px;
+    bottom: 10px;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 0;
     font-weight: 100;
     line-height: 10px;
@@ -147,7 +154,12 @@ h3 {
     color: green;
     font-weight: 600;
 }
+
+/* Connect Page */
 .connect {
-    height: 100px;
     margin: 20px;
+}
+
+footer {
+    text-align: center;
 }
