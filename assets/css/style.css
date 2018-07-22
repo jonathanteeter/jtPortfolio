@@ -70,7 +70,7 @@ body {
     display: inline-block;
 }
 .container {
-    display: inline-block;
+    /* display: inline-block; */
 }
 .nav-logo {
     display: inline-block;
@@ -107,11 +107,11 @@ body {
     /* font-display: auto; */
 }
 .page-section {
-    margin: 20px 10px 10px 20px;
+    margin: 20px 30px 20px;
     /* font-size: 24px; */
     text-align: left;
     line-height: 1.6;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* Projects Page */
@@ -157,6 +157,9 @@ h3 {
     color: green;
     font-weight: 600;
 }
+h4 {
+    background-color: orange;
+}
 
 /* Connect Page */
 .connect {
@@ -165,4 +168,13 @@ h3 {
 
 footer {
     text-align: center;
+}
+
+.skill-block {
+    background-color: lightgray;
+}
+
+.skill-list {
+    text-indent: 20px;
+    background-color: lightgray;
 }
