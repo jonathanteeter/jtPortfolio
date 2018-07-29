@@ -9,27 +9,28 @@ body {
 }
 
 /* NAV BAR */
-.navigation {
-    display: inline-block;
+.navbar-header {
+    text-align: center;
+}
+.navbar-nav {
+    text-align: center;
 }
 .nav-logo {
     display: inline-block;
     text-align: center;
-    max-width: 150px;
+    /* max-width: 150px; */
 }
 .nav-item {
-    max-width: 200px;
-    display: inline-block;
+    /* max-width: 200px; */
+    /* display: inline-block; */
+    /* align-content: center; */
+    /* text-align: center; */
 }
 
-.container-fluid {
-    display: inline-block;
-}
-
-.nav-center {
+/* .nav-center {
     align-content: center;
     text-align: center;
-}
+} */
 #about-icon {
     color: green;
 }
