@@ -12,28 +12,26 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    
+     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
 </head>
 
 <body>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 <!-- Add responsive container -->
 <div class="container-fluid">
-
+    
     <div class="row">
 
-        <div class="col-sm-2 nav-left" >
+        <div class="col-sm-2" >
 
             <!-- Create a Vertical Nav -->
             <ul class="nav flex-column">
@@ -43,73 +41,88 @@
                         <h3>Teeter</h3>
                     </a>
                     <h5>Full Stack Developer</h5>
-                    <br>
+
+                    <button class="btn-menu light-grey" id="navbar-button" data-toggle="collapse" data-target="#myNavbar">
+                        <!-- <span class="large material-icons">menu</span> -->
+                        <span class="fa fa-bars fa-sm" id="navbar-menu"></span>
+                    </button>
+                    <br><br>
                 </li>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+
                 <li class="nav-item">
-                    <a aria-label="Navigate to the About page" href="about.html" class="waves-effect waves-dark teal-text">
-                        <i class="material-icons left" id="about-icon">person</i>
-                        <span>About</span>
+                    <a href="about.html" class="btn-large waves-effect waves-dark" aria-label="Navigate to the About page">
+                        <!-- <i class="material-icons" id="about-icon">person</i> -->
+                        <i class="fa fa-user-alt fa-lg" id="about-icon"></i>
+                        <span><strong>About</strong></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a aria-label="Navigate to the Projects page" href="projects.html" class="waves-effect waves-dark teal-text">
-                        <i class="material-icons left" id="projects-icon">widgets</i>
-                        <span>Projects</span>
+                    <a href="projects.html" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Projects page">
+                        <!-- <i class="material-icons" id="projects-icon">widgets</i> -->
+                        <i class="fa fa-layer-group fa-lg" id="projects-icon"></i>
+                        <span><strong>Projects</strong></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a aria-label="Navigate to the Skills page" href="skills.html" class="waves-effect waves-dark teal-text">
-                        <i class="material-icons left" id="skills-icon">equalizer</i>
-                        <span>Skill Set</span>
+                    <a href="skills.html" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Skills page">
+                        <!-- <i class="material-icons" id="skills-icon">equalizer</i> -->
+                        <i class="fa fa-chart-line fa-lg" id="skills-icon"></i>
+                        <span><strong>Skill_Set</strong></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a aria-label="Navigate to the Contact page" href="contact.html" class="waves-effect waves-dark teal-text">
-                        <i class="material-icons left" id="contact-icon">contact_mail</i>
-                        <span>Contact</span>
+                    <a href="contact.html" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Contact page">
+                        <!-- <i class="material-icons" id="contact-icon">contact_mail</i> -->
+                        <i class="fa fa-address-card fa-lg" id="contact-icon"></i>
+                        <span><strong>Contact</strong></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a aria-label="Navigate to the Resume doc" href="https://docs.google.com/document/d/1oCFJ7wzUu4C9fZyuOuXW621Fc6w2vtH-4A3CULcKr9E/edit?usp=sharing" class="waves-effect waves-dark teal-text">
-                        <i class="material-icons left" id="resume-icon">view_list</i>
-                        <span>Resume</span>
+                    <a href="https://docs.google.com/document/d/1oCFJ7wzUu4C9fZyuOuXW621Fc6w2vtH-4A3CULcKr9E/edit?usp=sharing" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Resume doc">
+                        <!-- <i class="material-icons" id="resume-icon">view_list</i> -->
+                        <i class="fa fa-file-alt fa-lg" id="resume-icon"></i>
+                        <span><strong>Resume</strong></span>
                     </a>
                 </li>
+                <br>
             </ul>
         </div>
 
+        <!-- Create the main page -->
         <div class="col-sm-10">
 
-                <header id="page-name">
-                    <h1>CONTACT</h1>
-                </header>
-                <section class="page-section">        
-                    <h4>Connect with me!</h4>
-                </section>
-                <div class="connect">
-                    <p>
-                        <a aria-label="Email Jonathan" href="mailto:jonteeter@outlook.com" data-position="top" data-tooltip="Email Jonathan" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
-                            <i class="fa fa-envelope fa-3x"></i>
-                        </a>
-                        <a alt="" href="mailto:jonteeter@outlook.com" class="hoverline">jonteeter@outlook.com</a>
-                    </p>
-                    <p>
-                        <a aria-label="View Jonathan on GitHub" href="http://github.com/teeterjm58" target="_blank" data-position="top" data-tooltip="View Jonathan on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
-                            <i class="fa fa-github fa-3x"></i>
-                        </a>
-                        <a alt="" href="http://github.com/teeterjm58" class="hoverline">github.com/teeterjm58</a>
-                    </p>
-                    <p>
-                        <a aria-label="View Jonathan on LinkedIn" href="http://linkedin.com/in/jonteeter" target="_blank" data-position="top" data-tooltip="View Jonathan on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
-                            <i class="fa fa-linkedin fa-3x"></i>
-                        </a>
-                        <a alt="" href="http://linkedin.com/in/jonteeter" class="hoverline">linkedin.com/in/jonteeter</a>
-                    </p>
-        
-                </div>
-            </div>
+            <header id="page-name">
+                <h1>CONTACT</h1>
+            </header>
+            <section class="page-section">        
+                <h4>Connect with me!</h4>
+            </section>
+            <div class="connect">
+                <p>
+                    <a aria-label="Email Jonathan" href="mailto:jonteeter@outlook.com" data-position="top" data-tooltip="Email Jonathan" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-envelope fa-3x"></i>
+                    </a>
+                    <a alt="Email Jonathan" href="mailto:jonteeter@outlook.com" class="hoverline">jonteeter@outlook.com</a>
+                </p>
+                <p>
+                    <a aria-label="View Jonathan on GitHub" href="http://github.com/teeterjm58" data-position="top" data-tooltip="View Jonathan on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    <a alt="View Jonathan on GitHub" href="http://github.com/teeterjm58" class="hoverline">github.com/teeterjm58</a>
+                </p>
+                <p>
+                    <a aria-label="View Jonathan on LinkedIn" href="http://linkedin.com/in/jonteeter" data-position="top" data-tooltip="View Jonathan on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                    <a alt="View Jonathan on LinkedIn" href="http://linkedin.com/in/jonteeter" class="hoverline">linkedin.com/in/jonteeter</a>
+                </p>
+            </div>  
         </div>
+        
     </div>
+</div>    
 
 </body>
 </html

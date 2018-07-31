@@ -9,33 +9,24 @@ body {
 }
 
 /* NAV BAR */
-.navbar-header {
-    text-align: center;
-}
-.navbar-nav {
-    text-align: center;
-}
 .nav-logo {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    /* max-width: 150px; */
 }
 .nav-item {
-    /* max-width: 200px; */
-    /* display: inline-block; */
-    /* align-content: center; */
-    /* text-align: center; */
-}
-
-/* .nav-center {
-    align-content: center;
     text-align: center;
-} */
+}
+.btn-large {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: lightgray;
+}
 #about-icon {
-    color: green;
+    color: blue;
 }
 #projects-icon {
-    color: blue;
+    color: green;
 }
 #skills-icon {  
     color: darkviolet;
@@ -64,7 +55,8 @@ body {
     font-weight: normal;
     padding: 20px;
     color: white;
-    background: green;
+    background: #4a50aa;
+    /* background: darkslateblue; */
     /* font-display: auto; */
 }
 #profile-pic {
@@ -118,7 +110,7 @@ body {
     border-color: coral;
 }
 h3 {
-    color: green;
+    color: rgb#4a50aa;
     font-weight: 600;
 }
 h4 {
@@ -139,8 +131,8 @@ footer {
     text-align: center;
 }
 
-#skill-group {
-    border-width: 2px;
+.skill-group {
+    border-width: 3px;
     border-style: solid;
     border-color: darkorange;
 }
