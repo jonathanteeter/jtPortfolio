@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jtPorfolio</title>
+    
+    <!-- Materialize and Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+</head>
+
+<body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Must have the jQuery full version (not slim)for the sidenav to work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<!-- Add responsive container that spans the entire width of viewport -->
+<div class="container-fluid">
+
+    <!-- Create a Vertical Fixed Navbar -->
+    <div class="fixed-navbar">
+
+        
+
+        <ul class="nav flex-column">
+            <li class="nav-logo">
+                <a href="#index">
+                    <h3>Jonathan Teeter</h3>
+                    <span class="brown-text light"><h6>Full Stack Developer</h6></span><br><br>
+                </a>
+            </li>
+            <br><br>
+
+            <li class="nav-item">
+                <a href="#about" class="btn-large waves-effect waves-dark" aria-label="Navigate to the About page">
+                    <!-- <i class="material-icons" id="about-icon">person</i> -->
+                    <i class="fa fa-user-alt lg" id="about-icon"></i>
+                    <span>&nbsp<strong>About</strong></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Projects page">
+                    <!-- <i class="material-icons" id="projects-icon">widgets</i> -->
+                    <i class="fa fa-layer-group fa-lg" id="projects-icon"></i>
+                    <span><strong>Projects</strong></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Skills page">
+                    <!-- <i class="material-icons" id="skills-icon">equalizer</i> -->
+                    <i class="fa fa-chart-line fa-lg" id="skills-icon"></i>
+                    <span><strong>Skill_Set</strong></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Contact page">
+                    <!-- <i class="material-icons" id="contact-icon">contact_mail</i> -->
+                    <i class="fa fa-address-card fa-lg" id="contact-icon"></i>
+                    <span><strong>Contact</strong></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://docs.google.com/document/d/1oCFJ7wzUu4C9fZyuOuXW621Fc6w2vtH-4A3CULcKr9E/edit?usp=sharing" class="btn-large waves-effect waves-dark" aria-label="Navigate to the Resume doc">
+                    <!-- <i class="material-icons" id="resume-icon">view_list</i> -->
+                    <i class="fa fa-file-alt fa-xl" id="resume-icon"></i>
+                    <span>&nbsp&nbsp<strong>Resume</strong></span>
+                </a>
+            </li>
+            <br>
+        </ul>
+    </div>
+
+    <!-- Create the INDEX page -->
+    <div class="main" id="index">
+
+        <section id="profile-pic">            
+            <img class="img-responsive" src="assets/images/jteeterNew.jpg" style="width:100%;">
+        </section>
+
+    </div>
+
+    <!-- Create the ABOUT page -->
+    <div class="main" id="about">
+
+        <header class="page-name">
+            <h1>ABOUT</h1>
+        </header>
+
+        <section class="page-section">   
+            <div class="about-block">
+                <p>
+                    I have extensive experience in software testing and now have branched out into Full-Stack 
+                    Web Development. I am skilled at requirements analysis, creating well-designed and repeatable 
+                    test procedures, metrics reporting, and test automation. I am proficient with building 
+                    full-stack web applications, and I learn more web-based technology every day. I love a good 
+                    coding challenge and persist until the right solution is built and delivered.
+                </p>
+            </div>
+            <div class="about-block">
+                <p>
+                    I work best in an Agile environment with strong collaboration where outcome is key to success.  
+                    I bring these skills:  problem solving, attention to detail, organization, reading comprehension,
+                    active listening, and technical writing.  On a personal note, I value all people, stay physically 
+                    and mentally fit, am grateful for each day, and love life.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Create the PROJECTS page -->
+    <div class="main" id="projects">
+
+        <header class="page-name">
+            <h1>PROJECTS</i></h1>
+        </header>
+
+        <section class="page-section">      
+            <h4>Click on "Readme" to view what the project does and the technology used.</h4>
+            <h4>Click on "Run" to run the project or "GitHub" to view the code.</h4> 
+            <br>  
+
+            <div class="work">
+                <img src="assets/images/jtPortfolio-640-480.png" alt="My Portfolio">
+                <div class="btn-group" style="width:100%">                   
+                    <button style="width:50%"><a href="https://github.com/jonathanteeter/jtPortfolio/blob/master/README.md#jtportfolio">Readme</a></button>
+                    <button style="width:50%"><a href="https://github.com/jonathanteeter/jtPortfolio">GitHub</a></button>
+                </div>
+                <h3>My Portfolio</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/PsychicGame-640-480.png" alt="Psychic Game">
+                <div class="btn-group" style="width:100%">                   
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Psychic-Game/blob/master/README.md#psychic-game">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/Psychic-Game/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Psychic-Game">GitHub</a></button>
+                </div>
+                <h3>Psychic Game</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/GIFtastic-640-480.png" alt="GIFtastic">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/GifTastic#giftastic">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/GifTastic/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/GifTastic">GitHub</a></button>
+                </div>
+                <h3>GIFtastic</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/TriviaGame-640-480.png" alt="World History Trivia Game">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/TriviaGame/blob/master/README.md#triviagame">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/TriviaGame/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/TriviaGame">GitHub</a></button>
+                </div>
+                <h3>World History Trivia Game</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/CrystalCollector-640-480.png" alt="Crystal Collector Game">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/week-4-game/blob/master/README.md#week-4-game">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/week-4-game/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/week-4-game">GitHub</a></button>
+                </div>
+                <h3>Crystal Collector Game</h3>
+            </div>
+
+            <div class="work">
+                <img src="assets/images/TrainScheduler-640-480.png" alt="Train Scheduler">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/TrainScheduler/blob/master/README.md#trainschedule">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/TrainScheduler/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/TrainScheduler">GitHub</a></button>
+                </div>
+                <h3>Train Scheduler</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/JobSearch-Project-640-480.png" alt="Job Search Project">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/JobSearch-Project/blob/master/README.md#job-seach-project">Readme</a></button>
+                    <button style="width:34%"><a href="https://jonathanteeter.github.io/JobSearch-Project/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/JobSearch-Project">GitHub</a></button>
+                </div>
+                <h3>Job Search Project</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/LIRI-640-480.png" alt="LIRI API">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/liri-node-app/blob/master/README.md#liri-node-app">Readme</a></button>
+                    <button style="width:34%"><a href="https://docs.google.com/document/d/1FwuCDzuJB07-TNEDkgQZPMer4fgy6nzCsxQHRzMjuMM/edit?usp=sharing">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/liri-node-app">GitHub</a></button>
+                </div>
+                <h3>LIRI Bot (tweets, songs, movies)</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/BAmazon-640-480.png" alt="BAmazon Shopping">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Nodejs-and-MySQL/blob/master/README.md#nodejs-and-mysql-app">Readme</a></button>
+                    <button style="width:34%"><a href="https://docs.google.com/document/d/1Sja69bQNc1DGEWO2Y4E_3dP0j7_TsJtGJMIy6tcwoRw/edit?usp=sharing">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Nodejs-and-MySQL">GitHub</a></button>
+                </div>
+                <h3>BAmazon Store</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/FriendFinder-640-480.png" alt="Friend Finder">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/FriendFinder/blob/master/README.md#friendfinder">Readme</a></button>
+                    <button style="width:34%"><a href="https://murmuring-scrubland-82472.herokuapp.com/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/FriendFinder">GitHub</a></button>
+                </div>
+                <h3>Friend Finder</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/daBurger-640-480.png" alt="Eat da-Burger">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/da-Burger/blob/master/README.md#eat-da-burger">Readme</a></button>
+                    <button style="width:34%"><a href="https://salty-caverns-15064.herokuapp.com/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/da-Burger">GitHub</a></button>
+                </div>
+                <h3>Eat da-Burger</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/NewsScrape-640-480.png" alt="Mongo News Scrape">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/NewsScrape/blob/master/READEME.md#newsscrape">Readme</a></button>
+                    <button style="width:34%"><a href="https://sheltered-dusk-21104.herokuapp.com/">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/NewsScrape">GitHub</a></button>
+                </div>
+                <h3>Mongo News Scrape</h3>
+            </div>
+            <div class="work">
+                <img src="assets/images/HelpingHands-640-480.png" alt="Volunteer App Project">
+                <div class="btn-group" style="width:100%">
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Volunteer/blob/master/README.md#spread-the-love">Readme</a></button>
+                    <button style="width:34%"><a href="https://tranquil-eyrie-13874.herokuapp.com">Run</button>
+                    <button style="width:33%"><a href="https://github.com/jonathanteeter/Volunteer">GitHub</a></button>
+                </div>
+                <h3>Volunteer App Project</h3>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- Create the SKILLS page -->
+    <div class="main" id="skills">
+
+        <header class="page-name">
+            <h1>SKILLS</h1>
+        </header>
+
+        <section class="page-section"> 
+            <div class="skill-block">
+                <h4>Full Stack Development</h4>
+                <ul>
+                    <li>&#8811 HTML, CSS, Bootstrap</li>
+                    <li>&#8811 JavaScript, jQuery, Node-Express Server</li>
+                    <li>&#8811 Firebase, MySQL, Sequelize, MongoDB, Mongoose</li>
+                    <li>&#8811 React, APIs and AJAX</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h4>Test Automation</h4>
+                <ul>
+                    <li>&#8811 Selenium WebDriver, JAVA</li>
+                    <li>&#8811 Visual Basic, XML, UNIX</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h4>Integrated Development</h4>
+                <ul>
+                    <li>&#8811 Visual Studio Code, Team Foundation Server</li>
+                    <li>&#8811 Eclipse</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h4>Software Tools</h4>
+                <ul>
+                    <li>&#8811 Postman, SoapUI, GIT, Heroku</li>
+                    <li>&#8811 HP ALM Quality Center, Microsoft Test Manager, JIRA</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h4>Operating Systems</h4>
+                <ul>
+                    <li>&#8811 Linux, Unix, Windows</li>
+                    <li>&#8811 Andriod, iOS</li>
+                </ul>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- Create the CONTACT page -->
+    <div class="main" id="contact">
+
+        <header class="page-name">
+            <h1>CONTACT</h1>
+        </header>
+        <section class="page-section">        
+            <h4>Connect with me!</h4>
+
+            <div class="connect">
+                <p>
+                    <a aria-label="Email Jonathan" href="mailto:jonteeter@outlook.com" data-position="top" data-tooltip="Email Jonathan" class="btn-floating btn-medium waves-effect waves-light teal lighten-2 tooltipped">
+                        <i class="fa fa-envelope fa-lg"></i>
+                    </a>
+                    <a alt="Email Jonathan" href="mailto:jonteeter@outlook.com" class="hoverline">jonteeter@outlook.com</a>
+                </p>
+                <p>
+                    <a aria-label="View Jonathan on GitHub" href="http://github.com/jonathanteeter" data-position="top" data-tooltip="View Jonathan on GitHub" class="btn-floating btn-medium waves-effect waves-light teal lighten-2 tooltipped">
+                        <i class="fa fa-code-branch fa-sm"></i>
+                    </a>
+                    <a alt="View Jonathan on GitHub" href="http://github.com/jonathanteeter" class="hoverline">github.com/jonathanteeter</a>
+                </p>
+                <p>
+                    <a aria-label="View Jonathan on LinkedIn" href="http://linkedin.com/in/jonteeter" data-position="top" data-tooltip="View Jonathan on LinkedIn" class="btn-floating btn-medium waves-effect waves-light teal lighten-2 tooltipped">
+                        <i class="fa fa-link fa-xs"></i>
+                    </a>
+                    <a alt="View Jonathan on LinkedIn" href="http://linkedin.com/in/jonteeter" class="hoverline">linkedin.com/in/jonteeter</a>
+                </p>
+            </div>  
+
+        </section>
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="assets/javascript/navScroll.js"></script>
+
+</body>
+</html

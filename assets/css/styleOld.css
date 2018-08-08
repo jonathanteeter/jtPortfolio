@@ -1,14 +1,7 @@
 * {
     box-sizing: border-box;
 }
-body {
-    font-family: 'Arial';
-    font-size: calc(14px + (26 - 14) * ((80vw - 300px) / (1600 - 300)));
-    min-width: 320px;
-    text-align: left;
-    /* margin: 0; */
-}
-#index, #about, #projects, #skills, #contact {
+html, body, #index, #about, #projects, #skills, #contact {
     height:auto;
     /* Set a min height to each page for scrolling */
     min-height: 100vh; 
@@ -16,60 +9,61 @@ body {
     display: flex;
     flex-direction: column;
 }
+body {
+    font-family: 'Arial';
+    /* font-size: calc(14px + (26 - 14) * ((80vw - 300px) / (1600 - 300))); */
+    min-width: 320px;
+    text-align: left;
+    margin: 0;
+}
 
 /* ***** NAVBAR ***** */
-.col-md-8 {
-    display: inline-block;
-}
-.navbar-header {
-    align-content: center;
-    position: fixed;
-    top: 0px;
+.nav-item {
+    width: 100%;
 }
 .btn-large {
     width: 100%;
-    height: 55px;
+    height: 50px;
     margin-bottom: 5px;
-    background-color: lightgray;
+    background-color: darkgray;
     text-align: left;
 }
 .btn-large i {
-    text-decoration: none;
+    margin-left: 10px;    
+}
+.fixed-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: 15%; */
+    /* width: 200px; */
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    max-width: 200px;
+    min-width: 150px;
 }
 .nav-logo {
     text-align: center;
     border-bottom: 1px solid darkslateblue;
-    margin-bottom: 30px;
 }
-.nav-logo h3 {
+.fixed-navbar li h3 { /* nav-logo */
     color: #565dc7;
+    /* line-height: 1.0; */
     font-weight: lighter;
-    margin-top: 20px;
+    margin-top: 10px;
     text-decoration: none;
 }
-/* ul */
-.nav-list {
-    display: inline-block;
-    position: fixed;
-    background-color: #f1f1f1;
-}
-.nav li { 
-    width: 90%;
-    margin-left: 5%;
-}
-.nav li a {
+.fixed-navbar li a {
     display: block;
     color: white;
+    padding: 8px 16px;
     text-decoration: none;
 }
-.nav li a:hover:not(.active) {
+.fixed-navbar li a:hover:not(.active) {
+    /* background-color: rgb(40, 179, 179); */
     color: white;
-}
-/* On smaller screens, where width is less than 767px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 800px) {
-    .nav {padding-top: 15px;}
-    .nav a {font-size: 14px;}
-    .nav-list {position: relative}
 }
 #about-icon {
     color: blue;
@@ -88,13 +82,29 @@ body {
 }
 
 /* ***** EACH PAGE ***** */
+.main {
+    display: block;
+    /* display: inline-block; */
+    /* box-sizing: border-box; */
+    margin-left: 215px; 
+
+    /* Same as the width of the sidenav */
+    /* font-size: 28px;  */
+    /* Increased text to enable scrolling 
+    padding: 0px 10px;*/
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 .page-name {
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    display: block;
+    /* -webkit-box-sizing: border-box; */
+    /* box-sizing: border-box; */
     min-width: 320px;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
     max-height: 160px;
     text-align: left;
     margin-bottom: 10px;
@@ -104,6 +114,7 @@ body {
     padding: 20px;
     color: white;
     background: #4a50aa;
+    /* background: darkslateblue; */
     /* font-display: auto; */
 }
 .page-section {
@@ -113,19 +124,16 @@ body {
     letter-spacing: 1px;
 }
 
-/* ***** INDEX PAGE ***** */
+/* ***** INDEX ***** */
 #profile-pic {
+    margin: auto 0;
+    margin-bottom: 20px;
+    width: 60%;
     top: 0px;
-    margin-bottom: 50px;
-    /* display: inline-block; */
-    /* margin: auto 0; */
-    /* margin-bottom: 30px;
-    width: 100%;
-    top: 0px;
-    position: relative; */
+    position: absolute;
 }
 
-/* ***** ABOUT PAGE ***** */
+/* ***** ABOUT ***** */
 .about-block {
     padding-left: 30px;
     padding-top: 10px;
@@ -137,12 +145,11 @@ body {
     /* margin: 20px, 10px, 0px, 10px; */
     border: 2px solid darkorange;
 }
-
-/* ***** PROJECTS PAGE ***** */
-.page-section h5 {
-    margin-left: 20px;
-    color: darkorange;
+p {
+    text-align: justify;
 }
+
+/* ***** PROJECTS ***** */
 #projects {
     margin-bottom: 10px;
 }
@@ -152,8 +159,12 @@ body {
     width: 274px;
     margin-left: 20px;
     margin-bottom: 20px;
+    /* margin: 20px 0 25px; */
     overflow: auto;
 }
+/* .work:nth-child(even) {
+    margin: 40px;
+} */
 .work img {
     display: inline-block;
     width: 100%;
@@ -213,7 +224,7 @@ body {
     text-decoration: none;
 }
 
-/* ***** SKILLS PAGE ***** */
+/* ***** SKILLS ***** */
 .skill-block {
     padding-top: 10px;
     padding-left: 20px;
@@ -221,16 +232,25 @@ body {
     margin: 20px;
     border: 2px solid darkorange;
 }
+.skill-block h4 {
+    color: rgb(216, 121, 4);
+    text-decoration: underline;
+}
+.skill-block ul {
+    list-style-type: square;
+}
 .skill-block li {
     text-indent: 20px;
     color: black;
 }
+
 h4 {
     color: rgb(216, 121, 4);
     margin-left: 20px;
+    /* text-decoration: underline; */
 }
 
-/* ***** CONNECT PAGE ***** */
+/* ***** CONNECT ***** */
 .connect {
     margin: 20px;
 }
