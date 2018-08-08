@@ -3,9 +3,10 @@ This is a front-end application that highlights my skills and work history to po
 
 ## Design
 * The application uses the Bootstrap framework in a single-page approach design.
-    * A fixed Bootstrap vertical Navbar is included for navigation.
+    * A fixed vertical Navbar using Bootstrap is included for navigation.
     * The Navbar contains buttons with HTML tags that are linked to the information on the page.
     * HTML tags and JavaScript provide a smooth scrolling effect to bring the information into view.
+    * Used media query to move the vertical Navbar to the top for mobile device rendering.
 
 * Key technologies used to build this application are:
     * Bootstrap -- Responsive Front-end framework
@@ -18,7 +19,7 @@ This is a front-end application that highlights my skills and work history to po
 
 ## Challenges
 * Several solutions to a fixed Navbar were tried before one was selected as it proved to be reliable.
-* Setting up the smooth scrolling effect wasn't too bad once the JavaScript code was right.
+* Setting up the smooth scrolling effect worked well once the JavaScript code was right.
 
 ## Link to [My Portfolio] 
 (https://jonathanteeter.github.io/jtPortfolio/)
