@@ -1,19 +1,24 @@
 # jtPortfolio
-This is a my portfolio, that highlights relevant experience to potential employers.  Included is a my bio, coding projects, skill list, and contact details.  Also contained is a link to my most current resume.
+This is a my portfolio.  My relevant experience is highlighted for potential employers to view.  Included is a my bio, coding projects, skills, and contact details.  Also contained is a link to my most current resume.
 
 ## Design
 * The application uses the Bootstrap framework in a _single-page_ design.
-    * A fixed vertical Navbar is used for navigation.
-    * The Navbar contains buttons that are linked to the various page indexes:
-        * #index, #about, #projects, and #contact contained in the index.html file
-        * #resume that redirects to a Google document
-    * JavaScript provides a _smooth-scrolling_ effect to bring the information into view.
-    * Media query is used to move the vertical Navbar to the top for small-screen mobile device rendering.
+    * A fixed vertical Navbar positioned to the left is used for navigation.
+    * The Navbar contains buttons that are linked to the information rendered:
+        * The About page provides a short bio.
+        * The Projects page provides a list of projects I built.
+        * Each project contains a link to the readme file, a link to run the application, and a link to the code.
+        * The Skills page contains a list of my skills to include both Web Development and Software Testing.
+        * The Contact page contains links to my email, GitHub, and LinkedIn account.
+        * The Resume button redirects the user to my Google document resume.
+    * JavaScript provides a snazzy _smooth-scrolling_ effect to bring the information into view.
+    * The Media query style sheet method is used to move the vertical Navbar to the top for small-screen mobile device rendering.
 
 * Key technologies used to build this application are:
     * Bootstrap -- Responsive Front-end framework
     * HTML and CSS -- Provides the means to create structured documents with style
     * JavaScript -- Provides smooth scrolling to the various HTML blocks on the page
+    * Media Query -- Provides rendering to smaller mobile devices
 
 ## What the project does
 * The application provides a bio, project portfolio, skill set, and contact details to interested employers.
