@@ -1,12 +1,14 @@
 # jtPortfolio
-This is a front-end application that highlights my skills and work history to potential employers. 
+This is a my portfolio, that highlights relevant experience to potential employers.  Included is a my bio, coding projects, skill list, and contact details.  Also contained is a link to my most current resume.
 
 ## Design
-* The application uses the Bootstrap framework in a single-page approach design.
-    * A fixed vertical Navbar using Bootstrap is included for navigation.
-    * The Navbar contains buttons with HTML tags that are linked to the information on the page.
-    * HTML tags and JavaScript provide a smooth scrolling effect to bring the information into view.
-    * Used media query to move the vertical Navbar to the top for mobile device rendering.
+* The application uses the Bootstrap framework in a _single-page_ design.
+    * A fixed vertical Navbar is used for navigation.
+    * The Navbar contains buttons that are linked to the various page indexes:
+        * #index, #about, #projects, and #contact contained in the index.html file
+        * #resume that redirects to a Google document
+    * JavaScript provides a _smooth-scrolling_ effect to bring the information into view.
+    * Media query is used to move the vertical Navbar to the top for small-screen mobile device rendering.
 
 * Key technologies used to build this application are:
     * Bootstrap -- Responsive Front-end framework
