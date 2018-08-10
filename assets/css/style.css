@@ -66,7 +66,7 @@ body {
     color: white;
 }
 /* On smaller screens, where width is less than 767px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     .nav {padding-top: 15px;}
     .nav a {font-size: 14px;}
     .nav-list {position: relative}
