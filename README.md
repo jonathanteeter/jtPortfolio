@@ -2,7 +2,7 @@
 This is a my portfolio.  My relevant experience is highlighted for potential employers to view.  Included is a my bio, coding projects, skills, and contact details.  Also contained is a link to my most current resume.
 
 ## Design
-* The application uses the Bootstrap framework in a _single-page_ design.
+* The application uses the Bootstrap framework in a _HTML single-page_ design.
     * A vertical Navbar is used for navigation in a fixed position on the left.
     * The Navbar contains buttons that are linked to the information rendered:
         * The About page provides a short bio.
@@ -17,12 +17,12 @@ This is a my portfolio.  My relevant experience is highlighted for potential emp
 * Key technologies used to build this application are:
     * Bootstrap -- Responsive Front-end framework
     * HTML and CSS -- Provides the means to create structured documents with style
-    * JavaScript -- Provides smooth scrolling to the various HTML blocks on the single HTML page
+    * JavaScript -- Provides smooth scrolling to the various code blocks on the single HTML page
     * Media Query -- Provides rendering to smaller mobile devices
 
 ## What the project does
 * The application provides a bio, project portfolio, skill set, and contact details to interested employers.
-* The application also provides a link to my resume and work-history, also to those interested.
+* The application provides a link to my resume and work-history, also to those interested.
 
 ## Challenges
 * Several solutions to a fixed Navbar were tried before one was selected as it proved to be reliable.
